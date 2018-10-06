@@ -9,6 +9,9 @@
     "yarn": ">=1.10.1"
   },
   "description": "",
+  "scripts": {
+    "build": "lerna run --parallel --stream build"
+  },
   "private": true,
   "workspaces": [
     "services/*"

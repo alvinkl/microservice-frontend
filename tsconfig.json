@@ -1,0 +1,32 @@
+{
+  "allowJs": true,
+  "allowSyntheticDefaultImports": true,
+  "compilerOptions": {
+    "lib": [
+      "es5",
+      "es2015",
+      "dom",
+      "scripthost"
+    ],
+    "jsx": "react"
+  },
+  "declaration": true,
+  "esModuleInterop": true,
+  "exclude": [
+    "dist",
+    "node_modules"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js"
+  ],
+  "lib": [
+    "es2015",
+    "dom"
+  ],
+  "module": "es2015",
+  "outDir": "dist",
+  "sourceMap": true,
+  "target": "es5"
+}
