@@ -1,0 +1,19 @@
+{
+  "version": "independent",
+  "packages": [
+    "services/*"
+  ],
+  "npmClient": "yarn",
+  "npmClientArgs": [
+    "--no-lockfile"
+  ],
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "*.md",
+        "*.test.*"
+      ]
+    }
+  }
+}

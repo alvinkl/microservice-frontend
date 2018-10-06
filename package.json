@@ -1,0 +1,27 @@
+{
+  "name": "microservice-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.11.0",
+    "npm": ">=6.4.1",
+    "yarn": ">=1.10.1"
+  },
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "services/*"
+  ],
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.11.4",
+    "@types/webpack": "^4.4.14",
+    "lerna": "^3.4.1",
+    "nodemon": "^1.18.4",
+    "ts-loader": "^5.2.1",
+    "typescript": "^3.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
