@@ -1,0 +1,14 @@
+0 silly argv { _: [ 'add' ],
+0 silly argv   globs: [ 'react-dom' ],
+0 silly argv   lernaVersion: '3.4.1',
+0 silly argv   '$0': 'node_modules/.bin/lerna',
+0 silly argv   pkg: 'react,' }
+1 notice cli v3.4.1
+2 verbose rootPath /Users/alvinlim/github/microservice-frontend
+3 info versioning independent
+4 error Error: Invalid tag name "react,": Tags may not have any characters that encodeURIComponent encodes.
+4 error     at invalidTagName (/Users/alvinlim/github/microservice-frontend/node_modules/npm-package-arg/npa.js:87:15)
+4 error     at fromRegistry (/Users/alvinlim/github/microservice-frontend/node_modules/npm-package-arg/npa.js:290:13)
+4 error     at resolve (/Users/alvinlim/github/microservice-frontend/node_modules/npm-package-arg/npa.js:77:12)
+4 error     at npa (/Users/alvinlim/github/microservice-frontend/node_modules/npm-package-arg/npa.js:48:10)
+4 error     at AddCommand.initialize (/Users/alvinlim/github/microservice-frontend/node_modules/@lerna/add/index.js:30:17)
