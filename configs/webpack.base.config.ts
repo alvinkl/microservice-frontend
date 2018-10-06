@@ -13,6 +13,8 @@ export const serverBaseConfig = (config: webpack.Configuration = {}): webpack.Co
 
 		mode: 'development',
 
+		watch: process.env.NODE_ENV !== 'production',
+
 		module: {
 			rules: [
 				{
@@ -42,6 +44,8 @@ export const clientBaseConfig = (config: webpack.Configuration = {}): webpack.Co
 		},
 
 		mode: 'development',
+
+		watch: process.env.NODE_ENV !== 'production',
 
 		module: {
 			rules: [
