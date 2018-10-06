@@ -1,4 +1,4 @@
-import React = require('react');
+import * as React from 'react';
 import { hydrate } from 'react-dom';
 import { SkySearch } from './search';
 
@@ -6,11 +6,11 @@ import { SkySearch } from './search';
 
 class SkyMainApp extends React.Component<any, any> {
 	render() {
-		const { children } = this.props;
+		// const { children } = this.props;
 		return (
 			<div>
 				sky main app
-				<div>{children}</div>
+				<div>children</div>
 			</div>
 		);
 	}

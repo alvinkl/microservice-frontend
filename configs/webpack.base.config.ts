@@ -14,10 +14,12 @@ export const serverBaseConfig = (config: webpack.Configuration = {}): webpack.Co
 
 		resolve: {
 			extensions: ['.js', '.jsx', '.ts', '.tsx'],
-			modules: [path.resolve(__dirname, '..', 'node_modules')],
 		},
 
 		externals: [webpackNodeExternals()],
+		node: {
+			__dirname: true,
+		},
 
 		mode: 'development',
 
@@ -51,7 +53,6 @@ export const clientBaseConfig = (config: webpack.Configuration = {}): webpack.Co
 
 		resolve: {
 			extensions: ['.js', '.jsx', '.ts', '.tsx'],
-			modules: [path.resolve(__dirname, '..', 'node_modules')],
 		},
 
 		mode: 'development',
