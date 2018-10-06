@@ -2,21 +2,24 @@ import express = require('express');
 import path = require('path');
 import React = require('react');
 import { renderToString } from 'react-dom/server';
+import cors = require('cors');
 
 // pages
-import { SkySearch } from './src/search';
+import { SkySearch } from './src/Search';
 
 const app = express();
 const port = 8082;
 
+app.use(cors());
+
 // serve static file
 app.get('/download/sky', (req, res) => {
-	res.sendFile(path.resolve('build/client.bundle.js'));
+	res.sendFile(path.resolve('build/client.js'));
 });
 
 // serve HTML string
 app.get('*', (req, res) => {
-	console.log(`header req url: ${req.url}`);
+	// console.log(`header req url: ${req.url}`);
 
 	const stringify = renderToString(React.createElement(SkySearch));
 	const html = `
@@ -31,5 +34,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(port, () => {
-	console.log(`Header service is listening on port ${port}`);
+	console.log(`Sky service is listening on port ${port}`);
 });

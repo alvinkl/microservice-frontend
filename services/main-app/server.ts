@@ -1,6 +1,7 @@
 import path = require('path');
 import express = require('express');
 import Tailor = require('node-tailor');
+import cors = require('cors');
 
 const app = express();
 const port = 8080;

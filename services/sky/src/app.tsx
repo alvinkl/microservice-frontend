@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { hydrate } from 'react-dom';
-import { SkySearch } from './search';
+import { SkySearch } from './Search';
 
 // export const search = hydrate(<SkySearch />, document.querySelector('#fragment-sky-root'));
 
-class SkyMainApp extends React.Component<any, any> {
+export class SkyMainApp extends React.Component<any, any> {
 	render() {
 		// const { children } = this.props;
 		return (
@@ -15,5 +15,3 @@ class SkyMainApp extends React.Component<any, any> {
 		);
 	}
 }
-
-export default SkyMainApp;
