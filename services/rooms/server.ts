@@ -7,7 +7,7 @@ import { renderToString } from 'react-dom/server';
 import { RoomsSearch } from './src/search';
 
 const app = express();
-const port = 8082;
+const port = 8081;
 
 // serve static file
 app.get('/download/sky', (req, res) => {

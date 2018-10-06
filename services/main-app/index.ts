@@ -1,5 +1,5 @@
 import react = require('react');
 import reactDOM = require('react-dom');
 
-exports['react'] = react;
-exports['react-dom'] = reactDOM;
+module.exports['react'] = react;
+module.exports['react-dom'] = reactDOM;

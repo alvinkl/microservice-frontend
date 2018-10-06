@@ -10,7 +10,8 @@
   },
   "description": "",
   "scripts": {
-    "build": "lerna run --parallel --stream build"
+    "build": "lerna run --parallel --stream build",
+    "dev": "lerna run --parallel --stream dev"
   },
   "private": true,
   "workspaces": [
@@ -23,6 +24,7 @@
     "lerna": "^3.4.1",
     "nodemon": "^1.18.4",
     "ts-loader": "^5.2.1",
+    "ts-node": "^7.0.1",
     "typescript": "^3.1.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",

@@ -11,4 +11,4 @@ const client_config: webpack.Configuration = {
 	},
 };
 
-exports = [serverBaseConfig, clientBaseConfig(client_config)];
+module.exports = [serverBaseConfig(), clientBaseConfig(client_config)];

@@ -9,16 +9,7 @@ export class SkySearch extends React.Component<SkySearchProps, SkySearchState> {
 		super(props);
 	}
 
-	componentDidMount() {
-		this.registerAddToCart();
-	}
-
-	registerAddToCart() {
-		// window.addEventListener('fragment-header:add-to-cart', (e) => {
-		// 	const { products } = this.state
-		// 	this.setState({ products: [ ...products, e.detail.data ] })
-		// })
-	}
+	componentDidMount() {}
 
 	render() {
 		return (
